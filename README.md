@@ -8,12 +8,11 @@ Traditional communication systems, based on Shannon’s theory, prioritize the a
 2. System Model and Approach:
 The project employs a machine learning-driven semantic communication model based on an information-theoretic approach, incorporating key elements like probabilistic modeling, variational approximation, and infomax optimization. The system is designed to process multiple tasks simultaneously using semantic encoding and decoding techniques, consisting of the following components:
 Semantic Source Modeling: Observations are associated with multiple semantic variables representing different tasks, forming a "semantic source." The model captures probabilistic relationships among these variables, allowing simultaneous extraction of multiple semantic variables from a single observation.
-Cooperative Multi-Task Processing: The system features a centralized common unit (CU) encoder that extracts information relevant to all tasks, along with specific units (SUs) tailored for each task. This structure facilitates cooperation among tasks, enhancing overall task execution performance when statistical relationships exist between the tasks.
+Cooperative Multi-Task Processing: The system features a centralized encoder that extracts information relevant to all tasks, along with units tailored for each task. This structure facilitates cooperation among tasks, enhancing overall task execution performance when statistical relationships exist between the tasks.
 3. Components and Architecture:
-The architecture integrates several components to implement semantic communication in the NOMA framework:
-CU Encoder:A deep neural network-based encoder responsible for extracting common semantic features from the input data. It learns shared features across different tasks, which are then passed to task-specific SUs.
-SU Encoders Each SU encoder processes task-specific information based on the output from the CU. These task-specific encoders implement dense neural network layers to encode distinct features relevant to each task.
-NOMA Superposition:The encoded signals from different SUs are superimposed using power allocation techniques to simulate NOMA communication. This superposition allows the transmission of multiple signals simultaneously over a shared wireless channel.
+The architecture integrates several components to implement semantic communication in the NOMA framework.
+Encoders Each encoder processes task-specific information based on the output from the centralized encoder. These task-specific encoders implement dense neural network layers to encode distinct features relevant to each task.
+NOMA Superposition:The encoded signals from different encoders are superimposed using power allocation techniques to simulate NOMA communication. This superposition allows the transmission of multiple signals simultaneously over a shared wireless channel.
 AWGN Channel: The transmitted signals pass through an Additive White Gaussian Noise (AWGN) channel, simulating real-world wireless conditions.
 Base Station Model: A DNN-based base station model separates and decodes the received superimposed signals. The model consists of:
 - A fully connected DNN that extracts relevant features from the received signal.
@@ -32,7 +31,7 @@ Throughput Calculation: The system's throughput is calculated based on task exec
 Validation Error Rate:The model’s error rate during training and validation is plotted to evaluate its learning efficiency for each task.
 6. Key Findings and Simulation Results:
 The project demonstrates several important insights regarding cooperative multi-task semantic communication:
-Cooperative Encoding: The CU encoder’s presence significantly improves task execution performance when a statistical relationship exists between tasks, reducing error rates and enhancing task accuracy.
+Cooperative Encoding: The encoder’s presence significantly improves task execution performance when a statistical relationship exists between tasks, reducing error rates and enhancing task accuracy.
 Task Interference: Cooperative multi-task processing is not universally beneficial. When tasks are independent or exhibit no statistical relationship, cooperative processing can lead to performance degradation.
 NOMA Communication: The project validates that NOMA-based superposition enhances communication efficiency, allowing simultaneous multi-task processing over a shared wireless channel.
 7. Technical Implementation Details:
@@ -43,11 +42,6 @@ Python Libraries: Numpy, Matplotlib for data manipulation and visualization.
 Machine Learning Techniques:
 - Deep Neural Networks (DNN) for encoding and decoding semantic information.
 - Variational approximation techniques for optimizing probabilistic models.
-8. Comparison with Existing Work:
-The project builds upon and extends the research presented in the referenced paper【11†source】, which introduced an information-theoretic approach to semantic communication for cooperative multi-task processing. Key extensions include:
-- Integration of NOMA: The system incorporates NOMA-based signal superposition, enabling simultaneous multi-task transmission over a shared wireless channel.
-- Deep Learning-Based Approach: Implementing a deep neural network-based CU and SU structure enhances semantic feature extraction, achieving more efficient multi-task processing.
-- Performance Analysis: Comprehensive performance analysis, including throughput calculation and validation accuracy plots, offers deeper insights into the system's effectiveness under various communication scenarios.
-#### 9. Conclusion:
+8. Conclusion:
 The project successfully demonstrates an advanced semantic communication system capable of cooperative multi-task processing over wireless networks. By leveraging deep learning, information theory, and NOMA principles, the system effectively balances accuracy, efficiency, and robustness in multi-task execution, providing a foundation for future research in task-oriented communication and semantic information theory.
 This detailed description encapsulates all aspects of your project, presenting it comprehensively while maintaining technical depth and clarity, suitable for a professional report
