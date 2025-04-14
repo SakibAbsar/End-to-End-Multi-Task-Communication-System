@@ -1,8 +1,4 @@
-Below is a sample **README** section that you can adapt for your GitHub repository. It summarizes the main objectives, key concepts, system design, and instructions for setting up or experimenting with the project. Feel free to modify the sections as needed for your specific repository structure and workflow.
-
----
-
-# Cooperative Multi-Task Semantic Communication: Adaptability to PHY Techniques
+# End-to-End-Multi-Task-Communication-System
 
 This repository contains the implementation and supporting materials for the master project titled **“Cooperative Multi-Task Semantic Communication: Adaptability to PHY Techniques.”** The project explores how semantic (meaning-based) communication can be combined with advanced physical-layer (PHY) techniques—specifically Non-Orthogonal Multiple Access (NOMA)—to enable efficient multi-task processing over wireless channels.
 
