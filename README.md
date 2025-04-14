@@ -6,11 +6,10 @@ This repository contains the implementation and supporting materials for the mas
 1. [Overview](#overview)
 2. [Key Features](#key-features)
 3. [Project Structure](#project-structure)
-4. [Getting Started](#getting-started)
-5. [Methodology](#methodology)
-6. [Usage](#usage)
-7. [Results and Analysis](#results-and-analysis)
-8. [Future Work](#future-work)
+4. [Methodology](#methodology)
+5. [Usage](#usage)
+6. [Results and Analysis](#results-and-analysis)
+7. [Future Work](#future-work)
 
 ---
 
@@ -94,23 +93,6 @@ A typical layout may look like this (adjust as needed):
 2. **Deep Learning Framework** (e.g., PyTorch or TensorFlow)
 3. **Numpy, Matplotlib, etc.** as needed
 4. [Optional] **GPU support** for larger experiments.
-
-### Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/username/semantic-comm-noma.git
-   cd semantic-comm-noma
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. (Optional) Configure a **virtual environment** for isolation:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # or "venv\Scripts\activate" on Windows
-   pip install -r requirements.txt
-   ```
 
 ---
 
