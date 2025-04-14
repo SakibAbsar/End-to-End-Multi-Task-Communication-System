@@ -15,8 +15,6 @@ This repository contains the implementation and supporting materials for the mas
 6. [Usage](#usage)
 7. [Results and Analysis](#results-and-analysis)
 8. [Future Work](#future-work)
-9. [Citation](#citation)
-10. [License](#license)
 
 ---
 
@@ -186,27 +184,6 @@ Representative plots (Task Error Rate vs. SNR) demonstrate how the combination o
    Evaluate system performance under fading channels, multi-antenna setups, or real-world conditions.
 4. **Unified Decoder vs. Multiple Decoders**  
    Expand design trade-offs when employing a single unified decoder for all tasks or separate decoders per task.
-
----
-
-## Citation
-
-If this work is helpful in your research, please cite:
-
-```
-@mastersthesis{absar2025semantic,
-  title     = {Cooperative Multi-Task Semantic Communication: Adaptability to PHY Techniques},
-  author    = {Absar, Sakib},
-  school    = {Department of Communications Engineering, University of Bremen},
-  year      = {2025}
-}
-```
-
----
-
-## License
-
-This project is distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
 
 ---
 
